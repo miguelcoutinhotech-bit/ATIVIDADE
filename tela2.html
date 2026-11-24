@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="author" content="MIGUEL COUTINHO AGUIAR">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tela 02</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="grade-cards">
+    <div class="card">
+      <p>Acessar registro</p>
+      <button type="button" id="btnAbrir">Abrir Modal</button>
+    </div>
+
+    <div class="card">
+      <p>Ir para:</p>
+      <p>Cadastro</p>
+      <button type="button" id="btnVoltar">Voltar</button>
+    </div>
+  </div>
+
+  <!-- Modal -->
+  <div id="fundoModal" class="fundo-modal">
+    <div class="modal">
+      <label for="mCpf">CPF</label>
+      <input type="text" id="mCpf" readonly>
+
+      <label for="mRegistro">Código de registro</label>
+      <input type="text" id="mRegistro" readonly>
+
+      <label for="mMatricula">Matrícula</label>
+      <input type="text" id="mMatricula" readonly>
+
+      <label for="mNome">Nome</label>
+      <input type="text" id="mNome" readonly>
+
+      <button type="button" id="btnFechar" class="fechar">Fechar</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

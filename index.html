@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="author" content="MIGUEL COUTINHO AGUIAR">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cadastro</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Card de navegação (canto direito) -->
+  <div class="grade-topo">
+    <div class="card">
+      <p>Ir para:</p>
+      <p>Acessar registro</p>
+      <button type="button" id="btnProxima">Próxima página</button>
+    </div>
+  </div>
+
+  <!-- Formulário em GRID -->
+  <form id="formCadastro" class="grade-form">
+    <label for="cpf">CPF</label>
+    <input type="text" id="cpf" placeholder="000.000.000-00" required>
+
+    <label for="registro">Código de registro</label>
+    <input type="text" id="registro" placeholder="0000-00.00_00-00*000" required>
+
+    <label for="matricula">Matrícula</label>
+    <input type="text" id="matricula" required>
+
+    <!-- Campo extra: não aparece na tela, já vem preenchido com o nome completo -->
+    <input type="hidden" id="nome" value="MIGUEL COUTINHO AGUIAR">
+
+    <button type="submit">Enviar</button>
+  </form>
+
+  <script src="script.js"></script>
+</body>
+</html>
